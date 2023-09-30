@@ -6,7 +6,7 @@ def ocr_image(image_path, lang='chi_sim'):
         image = Image.open(image_path)
 
         # 使用pytesseract进行文字识别
-        text = pytesseract.image_to_string(image, lang=lang)
+        text = pytesseract.image_to_string(image, lang='eng')
 
         return text
     except Exception as e:
