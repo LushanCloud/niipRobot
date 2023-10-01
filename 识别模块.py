@@ -1,6 +1,6 @@
 from PIL import Image
 import pytesseract
-def ocr_image(image_path, lang='chi_sim'):
+def ocr_image(image_path, lang='eng'):
     try:
         # 打开要识别的图片
         image = Image.open(image_path)
